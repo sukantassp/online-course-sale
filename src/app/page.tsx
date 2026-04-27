@@ -21,7 +21,7 @@ export default function HomePage() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div className="relative max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-3xl">
             <Badge variant="info" className="mb-4">Interactive Learning Platform</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -66,7 +66,7 @@ export default function HomePage() {
 
       {/* Features Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Why Choose EduVerse?
@@ -125,7 +125,7 @@ export default function HomePage() {
 
       {/* Featured Courses */}
       <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
@@ -148,7 +148,7 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="py-20 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Start Learning?
           </h2>
@@ -161,7 +161,7 @@ export default function HomePage() {
               <Button size="lg" variant="secondary">Sign Up Free</Button>
             </Link>
             <Link href="/courses">
-              <Button size="lg" variant="outline" className="border-white text-secondary hover:bg-white hover:text-black">
+              <Button size="lg" variant="outline" className="border-white text-secondary hover:bg-white hover:text-secondary">
                 Browse Courses
               </Button>
             </Link>

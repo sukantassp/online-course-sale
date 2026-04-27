@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <nav className="bg-white border-b border-slate-200 sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24">
           {/* Logo */}
           <div className="flex items-center">
@@ -35,10 +35,26 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
+            <Link href="/chat" className="text-slate-600 hover:text-primary transition-colors">
+              About us
+            </Link>
+
             <Link href="/courses" className="text-slate-600 hover:text-primary transition-colors">
               Courses
             </Link>
+
+            <Link href="/chat" className="text-slate-600 hover:text-primary transition-colors">
+              Training & Placements
+            </Link>
+
+            <Link href="/chat" className="text-slate-600 hover:text-primary transition-colors">
+              Admissions
+            </Link>
             
+            <Link href="/chat" className="text-slate-600 hover:text-primary transition-colors">
+              Gallery
+            </Link>
+
             {features.enableLiveSession && (
               <Link href="/live" className="text-slate-600 hover:text-primary transition-colors">
                 Live Sessions

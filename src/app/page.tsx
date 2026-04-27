@@ -25,8 +25,8 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <Badge variant="info" className="mb-4">Interactive Learning Platform</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Learn Without
-              <span className="text-primary"> Buying First</span>
+              Build Your Career
+              <span className="text-secondary"> in Education</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8">
               EduVerse is the only platform where you can interact with instructors, 
@@ -37,26 +37,26 @@ export default function HomePage() {
                 <Button size="lg">Explore Courses</Button>
               </Link>
               <Link href="/signup">
-                <Button size="lg" variant="outline">Become an Instructor</Button>
+                <Button size="lg" variant="outline" className='text-secondary border-secondary'>Become an Instructor</Button>
               </Link>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
               <div>
-                <div className="text-3xl font-bold text-primary">6+</div>
+                <div className="text-3xl font-bold text-secondary">6+</div>
                 <div className="text-slate-400">Courses</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">10K+</div>
+                <div className="text-3xl font-bold text-secondary">10K+</div>
                 <div className="text-slate-400">Students</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-3xl font-bold text-secondary">50+</div>
                 <div className="text-slate-400">Instructors</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">4.8</div>
+                <div className="text-3xl font-bold text-secondary">4.8</div>
                 <div className="text-slate-400">Avg Rating</div>
               </div>
             </div>
@@ -161,7 +161,7 @@ export default function HomePage() {
               <Button size="lg" variant="secondary">Sign Up Free</Button>
             </Link>
             <Link href="/courses">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <Button size="lg" variant="outline" className="border-white text-secondary hover:bg-white hover:text-black">
                 Browse Courses
               </Button>
             </Link>

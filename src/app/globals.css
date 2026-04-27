@@ -5,12 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary: #4F46E5;
-  --primary-hover: #4338CA;
+  --primary: #123387;
+  --text-primary: #123387;
+  --primary-hover: #4acfff;
   --secondary: #64748B;
   --accent: #10B981;
   --accent-secondary: #F59E0B;
+  --text-secondary: #e8ab1d;
+  --secondary-border: #e8ab1d;
 }
+
 
 * {
   margin: 0;
@@ -116,7 +120,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  background: linear-gradient(135deg, #123387 0%, #7C3AED 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -127,4 +131,26 @@ body {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.hover\:bg-primary-hover:hover {
+  background-color: var(--primary-hover);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.border-secondary {
+  border-color: var(--secondary-border);
+}
+.hover\:text-primary:hover {
+  color: var(--text-primary);
 }

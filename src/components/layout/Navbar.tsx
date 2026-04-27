@@ -6,6 +6,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/Button';
 import { Avatar } from '@/components/ui/Avatar';
 import { features } from '@/config/features';
+import Image from "next/image";
 
 export function Navbar() {
   const { user, isAuthenticated, logout } = useAuth();
@@ -14,14 +15,21 @@ export function Navbar() {
   return (
     <nav className="bg-white border-b border-slate-200 sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-24">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">E</span>
+              <div className="w-36 h-16 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">
+                  <Image 
+                    src="/images/logo.png"
+                    alt="Logo"
+                    width={120}
+                    height={90}
+                    className="w-full h-full object-contain" 
+                  />
+                </span>
               </div>
-              <span className="text-xl font-bold text-slate-900">EduVerse</span>
             </Link>
           </div>
 

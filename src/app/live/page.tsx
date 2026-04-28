@@ -41,7 +41,7 @@ export default function LiveSessionsPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-3xl font-bold text-slate-900">Live Sessions</h1>

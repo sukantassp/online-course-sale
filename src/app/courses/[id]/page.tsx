@@ -60,7 +60,7 @@ export default function CourseDetailPage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12">
-        <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Course Info */}
             <div className="lg:col-span-2">
@@ -155,7 +155,7 @@ export default function CourseDetailPage() {
       </div>
 
       {/* Content Tabs */}
-      <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Tabs tabs={tabs} activeTab={activeTab} onChange={setActiveTab} />
 
         <div className="mt-8">

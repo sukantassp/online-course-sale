@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <nav className="bg-white border-b border-slate-200 sticky top-0 z-40">
-      <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24">
           {/* Logo */}
           <div className="flex items-center">

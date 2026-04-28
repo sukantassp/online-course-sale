@@ -91,7 +91,7 @@ export default function ChatPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h1 className="text-3xl font-bold text-slate-900 mb-8">Community Chat</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">

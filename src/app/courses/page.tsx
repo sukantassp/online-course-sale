@@ -78,7 +78,7 @@ export default function CoursesPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <div className="bg-white border-b border-slate-200">
-        <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h1 className="text-3xl font-bold text-slate-900 mb-4">Explore Courses</h1>
           {features.enableSearch && (
             <div className="max-w-xl">
@@ -92,7 +92,7 @@ export default function CoursesPage() {
         </div>
       </div>
 
-      <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Filters Sidebar */}
           <div className="lg:w-64 flex-shrink-0">

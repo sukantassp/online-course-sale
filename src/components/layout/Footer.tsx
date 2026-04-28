@@ -5,10 +5,47 @@ import { features } from '@/config/features';
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
-      <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-layout mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">          
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li><Link href="/courses" className="hover:text-white transition-colors">All Courses</Link></li>
+              {features.enableLiveSession && (
+                <li><Link href="/live" className="hover:text-white transition-colors">Live Sessions</Link></li>
+              )}
+              {features.enableChat && (
+                <li><Link href="/chat" className="hover:text-white transition-colors">Community</Link></li>
+              )}
+              <li><Link href="/instructors" className="hover:text-white transition-colors">Instructors</Link></li>
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Support</h4>
+            <ul className="space-y-2">
+              <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          {/* Account */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Get in Touch</h4>      
+            <ul className="space-y-2">
+              <li><a href="mailto:info@soumikainstitute.com" className="hover:text-white transition-colors">info@soumikainstitute.com</a></li>
+              <li><a href="tel:+919564785712" className="hover:text-white transition-colors">+91 9564785712</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Sindrani, Bagdah, North 24 Parganas, 743297</a></li>
+            </ul>
+          </div>
+
           {/* Brand */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">E</span>
@@ -37,36 +74,11 @@ export function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link href="/courses" className="hover:text-white transition-colors">All Courses</Link></li>
-              {features.enableLiveSession && (
-                <li><Link href="/live" className="hover:text-white transition-colors">Live Sessions</Link></li>
-              )}
-              {features.enableChat && (
-                <li><Link href="/chat" className="hover:text-white transition-colors">Community</Link></li>
-              )}
-              <li><Link href="/instructors" className="hover:text-white transition-colors">Instructors</Link></li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Support</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-            </ul>
-          </div>
+          
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-          <p>&copy; {new Date().getFullYear()} EduVerse. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Soumika Institute. All rights reserved.</p>
         </div>
       </div>
     </footer>

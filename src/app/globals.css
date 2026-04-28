@@ -143,14 +143,15 @@ body {
   background-color: var(--primary-hover);
 }
 .text-secondary {
-  color: var(--secondary);
-}
-.text-secondary {
   color: var(--text-secondary);
 }
+
 .border-secondary {
   border-color: var(--secondary-border);
 }
 .hover\:text-primary:hover {
   color: var(--text-primary);
+}
+.max-w-layout {
+  max-width: 90%;
 }

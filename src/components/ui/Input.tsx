@@ -26,7 +26,7 @@ export function Input({ className, label, error, icon, ...props }: InputProps) {
             'w-full px-4 py-2 border border-slate-300 rounded-md text-slate-900 placeholder-slate-400',
             'focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent',
             'disabled:bg-slate-50 disabled:cursor-not-allowed',
-            icon && 'pl-10',
+            !!icon && 'pl-10',
             error && 'border-red-500 focus:ring-red-500',
             className
           )}

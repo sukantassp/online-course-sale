@@ -50,18 +50,28 @@ export const loginUser = async (credentials: LoginCredentials): Promise<{ user: 
   // Find user by email (mock - in production, query database)
   const user = mockUsers.find(u => u.email === credentials.email);
   
-  if (!user) {
-    // For demo purposes, accept any password for demo users
-    if (credentials.email.includes('@')) {
-      const token = generateToken(user);
-      return { user, token };
-    }
-    return null;
+  if (user) {
+    // For demo, accept any password
+    const token = generateToken(user);
+    return { user, token };
   }
 
-  // For demo, accept any password
-  const token = generateToken(user);
-  return { user, token };
+  // For demo purposes, create temporary user for valid emails
+  if (credentials.email.includes('@')) {
+    const demoUser: User = {
+      id: `user-${Date.now()}`,
+      email: credentials.email,
+      name: credentials.email.split('@')[0],
+      role: 'student',
+      avatar: '',
+      bio: '',
+      createdAt: new Date().toISOString(),
+    };
+    const token = generateToken(demoUser);
+    return { user: demoUser, token };
+  }
+
+  return null;
 };
 
 /**
